@@ -1,0 +1,198 @@
+.category {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-top: 10rem;
+  height: fit-content;
+  .sofa-category,
+  .sofa-category2,
+  .sofa-category3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .sofa-category {
+    background-image: url(/assets/imgs/GENERAL/SOFASCAT.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5rem 9rem 5rem 0rem;
+    .sofa-h {
+      font-family: var(--font-family-primary);
+      font-weight: 400;
+      font-size: 6rem;
+      color: var(--secondary-color);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    a {
+      text-decoration: none;
+      width: 40%;
+      height: 10%;
+
+      .cat-btn {
+        border-radius: 0.2rem;
+        border: none;
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        p {
+          font-family: var(--font-family-secondary);
+          font-size: var(--font-size-medium);
+          color: var(--primary-color);
+          font-weight: var(--font-weight-regular);
+        }
+        .arrow-cat {
+          opacity: 0;
+          width: 2rem;
+          height: 2rem;
+          display: hidden;
+          position: relative;
+          transform: translateX(-20px);
+          transition: opacity 0.7s ease-in, transform 0.7s ease-in;
+        }
+        &:hover {
+          background-color: var(--shades-color);
+          border: #ffffff 2px solid;
+          color: var(--secondary-color);
+          p {
+            color: var(--secondary-color);
+          }
+          .arrow-cat {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(70px);
+          }
+        }
+      }
+    }
+  }
+  .sofa-category2 {
+    background-image: url(/assets/imgs/GENERAL/BUTACASCAT.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5rem 9rem 5rem 0rem;
+    .butaca-h {
+      font-family: var(--font-family-primary);
+      font-weight: 400;
+      font-size: 6rem;
+      color: var(--secondary-color);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    a {
+      text-decoration: none;
+      width: 40%;
+      height: 10%;
+
+      .cat-btn {
+        border-radius: 0.5rem;
+        border: none;
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        p {
+          font-family: var(--font-family-secondary);
+          font-size: var(--font-size-medium);
+          color: var(--primary-color);
+          font-weight: var(--font-weight-regular);
+        }
+        .arrow-cat {
+          opacity: 0;
+          width: 2rem;
+          height: 2rem;
+          display: hidden;
+          position: relative;
+          transform: translateX(-20px);
+          transition: opacity 0.7s ease-in, transform 0.7s ease-in;
+        }
+        &:hover {
+          background-color: var(--shades-color);
+          border: #ffffff 2px solid;
+          color: var(--secondary-color);
+          p {
+            color: var(--secondary-color);
+          }
+          .arrow-cat {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(70px);
+          }
+        }
+      }
+    }
+  }
+  .sofa-category3 {
+    background-image: url(/assets/imgs/GENERAL/MESITAREMO.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5rem 0rem 5rem 9rem;
+    .mobiliario-h {
+      font-family: var(--font-family-primary);
+      font-weight: 400;
+      font-size: 6rem;
+      color: var(--secondary-color);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    a {
+      text-decoration: none;
+      width: 40%;
+      height: 10%;
+
+      .cat-btn {
+        border-radius: 0.5rem;
+        border: none;
+        background-color: var(--secondary-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        p {
+          font-family: var(--font-family-secondary);
+          font-size: var(--font-size-medium);
+          color: var(--primary-color);
+          font-weight: var(--font-weight-regular);
+        }
+        .arrow-cat {
+          opacity: 0;
+          width: 2rem;
+          height: 2rem;
+          display: hidden;
+          position: relative;
+          transform: translateX(-20px);
+          transition: opacity 0.7s ease-in, transform 0.7s ease-in;
+        }
+        &:hover {
+          background-color: var(--shades-color);
+          border: #ffffff 2px solid;
+          color: var(--secondary-color);
+          p {
+            color: var(--secondary-color);
+          }
+          .arrow-cat {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(70px);
+          }
+        }
+      }
+    }
+  }
+}

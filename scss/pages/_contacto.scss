@@ -1,0 +1,145 @@
+main {
+  .contacto-hero {
+    background-image: url("/assets/imgs/contactobg.png");
+    background-size: cover;
+    background-position: center;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h4 {
+      font-size: 3em;
+      font-family: var(--font-family-primary);
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+      font-weight: 200;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .section-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    padding: 2rem 0rem 5rem 0rem;
+    .contactanos-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 1rem;
+
+      .span-top {
+        background-color: #76fe76;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        animation: colorchange 4s infinite;
+        @keyframes colorchange {
+          0% {
+            background-color: #a0f5a0;
+          }
+          25% {
+            background-color: #65df65;
+          }
+          50% {
+            background-color: #02ff02;
+          }
+          100% {
+            background-color: #00ff26;
+          }
+          90% {
+            background-color: #a0f5a0;
+          }
+          60% {
+            background-color: #65df65;
+          }
+          30% {
+            background-color: #02ff02;
+          }
+          0% {
+            background-color: #00ff26;
+          }
+        }
+      }
+      h3 {
+        font-family: var(--font-family-secondary);
+        font-size: 2em;
+        color: var(--primary-color);
+        font-weight: 400;
+      }
+    }
+
+    .both-contacto {
+      padding-top: 2rem;
+      gap: 2rem;
+      display: flex;
+      width: 100%;
+      .inner-contacto {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        .input-div {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          p {
+            font-family: var(--font-family-secondary);
+            color: var(--primary-color);
+            * {
+              padding-left: 0.2rem;
+              color: red;
+            }
+          }
+          input {
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem;
+            border: 1px solid var(--stroke-color);
+            border-radius: 0.2rem;
+          }
+          textarea {
+            height: 150px;
+            border: 1px solid var(--stroke-color);
+            border-radius: 0.2rem;
+          }
+        }
+        .top-der {
+          display: flex;
+          justify-content: space-between;
+          margin: auto;
+          flex-direction: row;
+          width: 100%;
+          .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 0.5rem;
+            img {
+              width: 40%;
+              height: 40%;
+            }
+            p {
+              justify-content: center;
+              display: flex;
+              text-align: center;
+              font-size: 0.9em;
+              font-family: var(--font-family-alternates);
+              color: var(--primary-color);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}

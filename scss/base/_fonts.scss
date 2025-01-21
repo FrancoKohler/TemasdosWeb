@@ -1,0 +1,37 @@
+/*BASE*/
+@font-face {
+  font-family: "Domaine";
+  src: url("../fonts/Domaine/DomaineDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alternates";
+  src: url("../fonts/Alternates/MontserratAlternates-Regular.ttf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Alternates";
+  src: url("../fonts/Alternates/MontserratAlternates-Bold.ttf")
+    format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}

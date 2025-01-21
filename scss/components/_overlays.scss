@@ -1,0 +1,44 @@
+.overlay {
+  border-radius: 1rem;
+  position: absolute;
+  display: none;
+  background-color: var(--secondary-color);
+  width: 40%;
+  height: 200px;
+  z-index: 1000;
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    img {
+      width: 80%;
+    }
+    img:hover {
+      transform: scale(0.8);
+      transition: transform 0.3s ease;
+    }
+    h2 {
+      font-family: var(--font-family-alternates);
+      padding-left: 0;
+    }
+
+    a {
+      font-family: var(--font-family-secondary);
+      font-weight: 300;
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+    a:hover {
+      text-decoration: underline;
+      transition: transform 1s ease;
+    }
+  }
+}
+.overlay.show {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

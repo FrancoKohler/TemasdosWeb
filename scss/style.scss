@@ -1,0 +1,23 @@
+/*BASE*/
+@use "base/reset";
+@use "base/fonts";
+
+/*UTILITIES*/
+@use "utilities/variables";
+
+/*LAYOUT*/
+@use "layout/navbar";
+@use "layout/footer";
+
+/*PAGES STYLES*/
+@use "pages/all";
+@use "pages/hero";
+@use "pages/contacto";
+@use "pages/category";
+@use "pages/nuevosymas";
+@use "pages/inspiracion";
+@use "pages/lowerindex";
+@use "pages/producto";
+
+/*COMPONENTS*/
+@use "components/overlays";

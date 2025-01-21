@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temasdos Productos</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--APP-->
+    <script src="../app/index.js" defer></script>
+    <script src="../app/data.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html"><h1 class="brand-name">TEMASDOS</h1></a>
+
+      <button
+        class="menu-btn navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img class="hamburger" src="../assets/imgs/menu.png" alt="hamburger" />
+      </button>
+    </nav>
+    <div class="collapsed-menu" id="navbarToggleExternalContent">
+      <ul class="nav-links">
+        <li class="li-nav"><a href="./index.html">Home</a></li>
+        <li class="li-nav"><a href="./pages/about.html">Sobre Nosotros</a></li>
+        <li class="li-nav"><a href="./pages/all.html">Productos</a></li>
+        <li class="li-nav"><a href="./pages/contact.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="top-productos">
+        <h3>Productos</h3>
+        <div class="categorias">
+          <button id="sofas">SOFÁS</button>
+          <button id="butacas">BUTACAS</button>
+          <button id="mobiliario">MOBILIARIO</button>
+        </div>
+      </div>
+      <section class="productos">
+        <div id="contenedorSofas" class="contenedor-sofa"></div>
+        <div id="contenedorMobiliario" class="contenedor"></div>
+        <div id="contenedorButacas" class="contenedor"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-grid">
+        <div class="inner-footer">
+          <p class="inner-temasdos">TEMASDOS</p>
+          <div class="sub-footer">
+            <p class="sub-footer-p">Diseñado por Franco Köhler</p>
+            <p class="sub-footer-p">Políticas de Privacidad</p>
+            <p class="sub-footer-p">Garantías</p>
+          </div>
+        </div>
+        <div class="inner-footer">
+          <p class="inner-siguenos">Síguenos</p>
+          <div class="social-footer">
+            <img src="../assets/LOGOS/FACEBOOK.png" alt="FACEBOOK" />
+            <img src="../assets/LOGOS/PINTEREST.png" alt="PINTEREST" />
+            <img src="../assets/LOGOS/YOUTUBE.png" alt="YOUTUBE" />
+            <img src="../assets/LOGOS/INSTA.png" alt="INSTA" />
+          </div>
+        </div>
+        <div class="inner-footer">
+          <a href="./pages/contact.html"
+            ><p class="inner-contact">Contáctanos</p></a
+          >
+          <div class="sub-contact">
+            <p>temasdos@gmail.es</p>
+            <p>+34657889025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

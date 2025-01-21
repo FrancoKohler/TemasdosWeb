@@ -1,0 +1,166 @@
+.lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding: 5rem 5rem 5rem 5rem;
+  min-height: 100vh;
+  width: 100%;
+  .sobre-feria-sust {
+    gap: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+
+    .inner-sfs {
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 450px;
+      height: 100%;
+      .h-sfs {
+        font-family: var(--font-family-secondary);
+        color: var(--primary-color);
+        font-size: var(--font-size-primary);
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        text-align: center;
+      }
+      .img-inner {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
+      .sub-sfs {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 1rem 2rem 1rem 2rem;
+        .sub-h-sfs {
+          font-family: var(--font-family-secondary);
+          color: var(--primary-color);
+          font-size: var(--font-size-small);
+          font-weight: 400;
+        }
+        p {
+          font-family: var(--font-family-secondary);
+          color: var(--terciary-color);
+          font-size: var(--font-size-small);
+          font-weight: 400;
+        }
+        a {
+          text-decoration: none;
+          button {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            border: none;
+            background-color: transparent;
+            p {
+              color: var(--primary-color);
+            }
+            p:hover {
+              color: var(--stroke-color);
+            }
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.downloads {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5rem;
+  .downloads-div {
+    background-color: var(--secondary-color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+    border: 1px solid var(--stroke-color);
+    border-radius: 0.2rem;
+    width: 30%;
+    img {
+      width: 30%;
+    }
+
+    h3 {
+      font-family: var(--font-family-secondary);
+      color: var(--primary-color);
+      font-size: var(--font-size-small);
+      font-weight: 500;
+      padding: 1rem;
+    }
+    p {
+      justify-content: center;
+      font-family: var(--font-family-alternates);
+      line-height: 2;
+    }
+    .email-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      input {
+        width: 50%;
+        padding: 1rem;
+        border: 1px solid var(--stroke-color);
+        border-radius: 0.5rem;
+        height: 50px;
+        font-family: var(--font-family-alternates);
+      }
+      button {
+        width: 40%;
+        height: 50px;
+        font-family: var(--font-family-secondary);
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+        border-radius: 0.2rem;
+        border: none;
+      }
+      button:hover {
+        background-color: var(--shades-color);
+        border: 1px solid var(--secondary-color);
+      }
+    }
+    button {
+      width: 60%;
+      height: 50px;
+      font-family: var(--font-family-secondary);
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+      border-radius: 0.5rem;
+      border: none;
+    }
+    button:hover {
+      background-color: var(--shades-color);
+      border: 1px solid var(--secondary-color);
+    }
+  }
+}

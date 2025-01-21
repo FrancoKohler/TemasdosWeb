@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temasdos Homepage</title>
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--APP-->
+    <script src="./app/index.js" defer></script>
+    <!---BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>   
+  <body>
+    <nav class="nav-bar">
+      <a href="./index.html"><h1 class="brand-name">TEMASDOS</h1></a>
+
+      <button
+        class="menu-btn navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img class="hamburger" src="./assets/imgs/menu.png" alt="hamburger" />
+      </button>
+    </nav>
+    <div class="menu-collapsed" id="navbarToggleExternalContent">
+      <ul class="nav-links">
+        <li class="li-nav"><a  href="./index.html">Home</a></li>
+        <li class="li-nav"><a  href="./pages/about.html">Sobre Nosotros</a></li>
+        <li class="li-nav"><a  href="./pages/all.html">Productos</a></li>
+        <li class="li-nav"><a  href="./pages/contact.html">Contacto</a></li>
+      </ul>
+    </div>
+    <section class="hero">
+      <div class="hero-div">
+        <h1 class="hero-title">TEMASDOS</h1>
+        <button class="hero-btn">
+          <div class="inner-btn">
+            <p>Ver Más</p>
+            <img
+              class="arrow-forward"
+              src="/assets/imgs/arrow_forward.png"
+              src="arrowfw"
+            />
+          </div>
+        </button>
+      </div>
+    </section>
+    <main>
+      <section class="nuevos-modelos">
+        <div class="div-btn-modelos">
+          <button class="btn-modelos active" id="btnModelos">
+            Nuevos Modelos
+          </button>
+          <button class="btn-modelos hide" id="btnMas">Más Vendidos</button>
+        </div>
+
+        <div class="grid-nuevos" id="gridNuevos">
+          <div class="grid-item">
+            <img src="./assets/imgs/SOFAS/sisal.jpg" alt="SISAL" />
+            <p class="p-item">SISAL</p>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/imgs/BUTACAS/DINO.jpg" alt="DINO" />
+            <p class="p-item">DINO</p>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/imgs/SOFAS/MISTRAL.jpg" alt="MISTRAL" />
+            <p class="p-item">MISTRAL</p>
+          </div>
+        </div>
+        <div class="grid-mas" id="gridMas">
+          <div class="mas-items">
+            <img src="./assets/imgs/SOFAS/YUTE.jpg" alt="YUTE" />
+            <p class="p-item">YUTE</p>
+          </div>
+          <div class="mas-items">
+            <img src="./assets/imgs/SOFAS/TUNDRA.jpg" alt="TUNDRA" />
+            <p class="p-item">TUNDRA</p>
+          </div>
+          <div class="mas-items">
+            <img src="./assets/imgs/BUTACAS/OMEGA.jpg" alt="OMEGA" />
+            <p class="p-item">OMEGA</p>
+          </div>
+        </div>
+
+        <button class="btn-modelos-mas">
+          Ver Todos <img src="./assets/imgs/arrowbl.png" alt="Flecha" />
+        </button>
+      </section>
+      <!-------SECCION INSPO------->
+      <section class="inspiracion">
+        <h2>Inspírate de Nuestros Clientes</h2>
+        <div class="inspo-grid">
+          <!----FIRST GRID ITEM----->
+          <div class="inspo-1">
+            <div class="div-1">
+              <h3 class="h-1">01.</h3>
+              <img
+                class="inspo-img-1"
+                src="./assets/imgs/GENERAL/HERO1.jpg"
+                alt="Img For Inspo"
+              />
+              <!---BTN ZOOM 1--->
+
+              <img
+                id="zoom1"
+                class="zoom-1"
+                src="./assets/imgs/ZOOM.png"
+                alt="Zoom Icon"
+              />
+
+              <!---BTN ZOOM 2--->
+
+              <img
+                id="zoom2"
+                class="zoom-2"
+                src="./assets/imgs/ZOOM.png"
+                alt="Zoom Icon"
+              />
+            </div>
+            <div class="inspo-1-text">
+              <h3>01.</h3>
+              <p class="inspo-p1">
+                El sofá “Sirocco ECO” transforma tu sala de estar en un espacio
+                cómodo y sostenible, gracias a su espuma reciclada y tejidos
+                ecológicos. Su diseño incluye cojines decorativos, aportando
+                estilo y calidez al ambiente. Una opción perfecta para relajarte
+                mientras cuidas del planeta.
+              </p>
+            </div>
+            <div class="overlay" id="overlay1">
+              <div class="overlay-content">
+                <img src="./assets/imgs/SOFAS/SIROCCOECO.jpg" alt="SIROCCO" />
+                <h2>SIROCCO ECO</h2>
+                <a href="./pages/product.html">Más Configuraciones</a>
+              </div>
+            </div>
+            <div class="overlay" id="overlay2">
+              <div class="overlay-content">
+                <img src="./assets/imgs/MOBILIARIO/ISLAMESA.jpg" alt="ISLA" />
+                <h2>ISLA MESA</h2>
+                <a href="./pages/product.html">Más Configuraciones</a>
+              </div>
+            </div>
+          </div>
+          <!----SECOND GRID ITEM----->
+          <div class="inspo-2">
+            <div class="inspo-img-2">
+              <h3 class="h-2">02.</h3>
+              <div class="imgs-2">
+                <img
+                  class="inspo-img-2"
+                  src="./assets/imgs/GENERAL/INSPO2.png"
+                  alt="Img For Inspo"
+                />
+                <img
+                  class="inspo-img-2"
+                  src="./assets/imgs/GENERAL/INSPO3.png"
+                  alt="Img For Inspo"
+                />
+              </div>
+              <!---BTN ZOOM 3--->
+              <img
+                id="zoom3"
+                class="zoom-3"
+                src="./assets/imgs/ZOOM.png"
+                alt="Zoom Icon"
+              />
+              <!---BTN ZOOM 4--->
+              <img
+                id="zoom4"
+                class="zoom-4"
+                src="./assets/imgs/ZOOM.png"
+                alt="Zoom Icon"
+              />
+            </div>
+            <div class="inspo-2-text">
+              <h3>02.</h3>
+              <p class="inspo-p2">
+                Barine es un sofá modular con diseño limpio y atemporal, ideal
+                para cualquier sala de estar. Sus cabeceros ajustables ofrecen
+                comodidad en diferentes posiciones, manteniendo una silueta
+                minimalista cuando están recogidos. Con una base baja y mullida,
+                combina estilo moderno y confort total.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="sofa-category">
+          <h3 class="sofa-h">Sofás</h3>
+          <a href="./pages/all.html"
+            ><button class="cat-btn">
+              <p>Ver Más</p>
+              <img
+                class="arrow-cat"
+                src="./assets/imgs/arrow_forward.png"
+                src="arrowfw"
+              /></button
+          ></a>
+        </div>
+        <div class="sofa-category2">
+          <h3 class="butaca-h">Butacas</h3>
+          <a href="./pages/all.html"
+            ><button class="cat-btn">
+              <p>Ver Más</p>
+              <img
+                class="arrow-cat"
+                src="./assets/imgs/arrow_forward.png"
+                src="arrowfw"
+              /></button
+          ></a>
+        </div>
+        <div class="sofa-category3">
+          <h3 class="mobiliario-h">Mobiliario</h3>
+          <a href="./pages/all.html"
+            ><button class="cat-btn">
+              <p>Ver Más</p>
+              <img
+                class="arrow-cat"
+                src="./assets/imgs/arrow_forward.png"
+                src="arrowfw"
+              /></button
+          ></a>
+        </div>
+      </section>
+      <section class="lower">
+        <div class="sobre-feria-sust">
+          <div class="inner-sfs">
+            <h3 class="h-sfs">Sobre Nosotros</h3>
+            <img class="img-inner" src="./assets/imgs/GENERAL/CEOISABELA.jpg" alt="CEO ISABELA" />
+            <div class="sub-sfs">
+              <h4 class="sub-h-sfs">Expertos en confort.</h4>
+              <p>
+                Combinamos lo artesanal con la tecnología para crear diseños
+                únicos.
+              </p>
+              <a href="./pages/about.html"
+                ><button>
+                  <p>Conócenos</p>
+                  <img src="/assets/imgs/arrowbl.png" src="arrowfw" /></button
+              ></a>
+            </div>
+          </div>
+          <div class="inner-sfs">
+            <h3 class="h-sfs">Feria Habitat 2024</h3>
+            <img class="img-inner" src="./assets/imgs/GENERAL/habitat.jpg" alt="CEO ISABELA" />
+            <div class="sub-sfs">
+              <h4 class="sub-h-sfs">Presentación de Temasdos.</h4>
+              <p>Presentación de nuevos modelos de sofás y butacas.</p>
+              <a href="./pages/about.html"/>
+              <button>
+                <p>Lee Más</p>
+                <img  src="/assets/imgs/arrowbl.png" src="arrowfw" />
+              </button>
+            </a>
+            </div>
+          </div>
+          <div class="inner-sfs">
+            <h3 class="h-sfs">Sustentabilidad</h3>
+            <img class="img-inner"  src="./assets/imgs/GENERAL/SUSTETELA.png" alt="CEO ISABELA" />
+            <div class="sub-sfs">
+              <h4 class="sub-h-sfs">Cuidado del medioambiente.</h4>
+              <p>
+                Utilizamos materiales reciclables para promover el cuidado del
+                medioambiente.
+              </p>
+              <a href="./pages/about.html"/>
+              <button>
+                <p>Lee Más</p>
+                <img  src="/assets/imgs/arrowbl.png" alt="arrowfw" />
+              </button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="downloads">
+        <div class="downloads-div">
+          <h3>Descarga Nuestro Catálogo</h3>
+          <p>Suscríbete a nuestro boletín y sé el primero en enterarte de las novedades sobre nuestros muebles.</p>
+          <div class="email-div"><input type="email" placeholder="Introduzca E-mail"><button >Suscríbete</button></div>
+        </div>
+        <div class="downloads-div">
+          <h3>Descarga Nuestras Colecciones en 2D y 3D</h3>
+        <img src="./assets/imgs/SVG.svg" alt="downloads">
+        
+        <button>Descargar</button>
+      </div>
+        
+      </section>
+    </main>
+    <footer>
+      <div class="footer-grid">
+        <div class="inner-footer">
+          <p class="inner-temasdos">TEMASDOS</p>
+          <div class="sub-footer">
+            <p class="sub-footer-p">Diseñado por Franco Köhler</p>
+            <p class="sub-footer-p">Políticas de Privacidad</p>
+            <p class="sub-footer-p">Garantías</p>
+          </div>
+        </div>
+        <div class="inner-footer">
+          <p class="inner-siguenos">Síguenos</p>
+          <div class="social-footer">
+            <img src="./assets/LOGOS/FACEBOOK.png" alt="FACEBOOK">
+            <img src="./assets/LOGOS/PINTEREST.png" alt="PINTEREST">
+            <img src="./assets/LOGOS/YOUTUBE.png" alt="YOUTUBE">
+            <img src="./assets/LOGOS/INSTA.png" alt="INSTA">
+          </div>
+        </div>
+        <div class="inner-footer">
+          <a href="./pages/contact.html"><p class="inner-contact">Contáctanos</p></a>
+          <div class="sub-contact">
+            <p>temasdos@gmail.es</p>
+            <p>+34657889025</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>

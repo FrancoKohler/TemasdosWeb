@@ -1,0 +1,198 @@
+.nuevos-modelos {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .div-btn-modelos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20rem;
+    gap: 2rem;
+
+    .btn-modelos {
+      background-color: transparent;
+      border: none;
+      width: fit-content;
+      font-family: var(--font-family-secondary);
+      font-size: var(--font-size-small);
+      cursor: pointer;
+      color: var(--primary-color);
+    }
+
+    #btnModelos.active,
+    #btnMas.active {
+      color: var(--primary-color);
+    }
+
+    #btnModelos.hide,
+    #btnMas.hide {
+      color: var(--stroke-color);
+    }
+  }
+  /*------NUEVOS MODELOS------*/
+  .grid-nuevos.hide {
+    display: none;
+  }
+  .grid-nuevos {
+    display: flex;
+    margin: auto;
+    padding-top: 3rem;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    .grid-item:hover img {
+      opacity: 0;
+    }
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid var(--stroke-color);
+      width: 70%;
+      height: 400px;
+      &:first-child {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      &:first-child:hover {
+        background-image: url("../../assets/imgs/GENERAL/SISAL.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:last-child {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      &:last-child:hover {
+        background-image: url("../../assets/imgs/GENERAL/MISTRAL.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:not(:first-child):not(:last-child):hover {
+        background-image: url("../../assets/imgs/GENERAL/DINO.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-left: none;
+        border-right: none;
+      }
+      /*---HOVERS---*/
+      img {
+        width: 80%;
+        height: 120px;
+        object-fit: cover;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  /*------MAS VENDIDOS------*/
+  .grid-mas.show {
+    display: flex;
+  }
+  .grid-mas {
+    display: none;
+    margin: auto;
+    padding-top: 3rem;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+    .mas-items:hover img {
+      opacity: 0;
+    }
+    .mas-items {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid var(--stroke-color);
+      width: 70%;
+      height: 400px;
+      &:first-child {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      &:first-child:hover {
+        background-image: url("../../assets/imgs/GENERAL/YUTRA.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:last-child {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+      &:last-child:hover {
+        background-image: url("../../assets/imgs/GENERAL/OMEGA.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      &:not(:first-child):not(:last-child):hover {
+        background-image: url("../../assets/imgs/GENERAL/TUNDRA.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:not(:first-child):not(:last-child) {
+        border-left: none;
+        border-right: none;
+      }
+      /*---HOVERS---*/
+      img {
+        width: 80%;
+        height: 120px;
+        object-fit: cover;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+  .btn-modelos-mas {
+    display: flex;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-small);
+    cursor: pointer;
+    color: var(--primary-color);
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  .btn-modelos-mas:hover {
+    color: var(--stroke-color);
+  }
+}
+.grid-nuevos .p-item,
+.grid-mas .p-item {
+  display: flex;
+  position: relative;
+  font-family: var(--font-family-alternates);
+  color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+}

@@ -1,0 +1,119 @@
+.inspiracion {
+  padding-top: 2rem;
+  h2 {
+    display: flex;
+    padding-left: 20rem;
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-secondary);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  .inspo-grid {
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    .h-1 {
+      position: absolute;
+      padding-left: 1rem;
+      padding-top: 1rem;
+      font-family: var(--font-family-alternates);
+      color: var(--secondary-color);
+    }
+    .imgs-2 {
+      display: flex;
+    }
+    .inspo-1,
+    .inspo-2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .inspo-1 {
+      flex: 1;
+      width: 550px;
+      position: relative;
+      .inspo-img-1 {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .zoom-1,
+      .zoom-2 {
+        cursor: pointer;
+        position: absolute;
+        width: 30px;
+      }
+
+      .zoom-1 {
+        left: 40%;
+        bottom: 50%;
+      }
+
+      .zoom-2 {
+        left: 55%;
+        bottom: 45%;
+      }
+      .inspo-1-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        font-family: var(--font-family-secondary);
+        color: var(--primary-color);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-regular);
+      }
+    }
+    .inspo-2 {
+      flex: 1.5;
+      width: 60%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .inspo-img-2 {
+        width: 50%;
+        .h-2 {
+          position: absolute;
+          padding-left: 1rem;
+          padding-top: 1rem;
+          font-family: var(--font-family-alternates);
+          color: var(--secondary-color);
+        }
+        .inspo-img-2 {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .zoom-3,
+        .zoom-4 {
+          cursor: pointer;
+          position: absolute;
+          width: 30px;
+        }
+        .zoom-3 {
+          left: 20%;
+          bottom: 45%;
+        }
+        .zoom-4 {
+          right: 20%;
+          bottom: 50%;
+        }
+      }
+      .inspo-2-text {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-top: 1.5rem;
+        font-family: var(--font-family-secondary);
+        color: var(--primary-color);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-regular);
+      }
+    }
+  }
+}
