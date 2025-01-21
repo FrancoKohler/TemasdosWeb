@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuBtn = document.querySelector(".menu-btn");
-  const menu = document.querySelector(".collapsed-menu");
+  const menu = document.querySelector(".collapse");
   const brand = document.querySelector(".brand-name");
   const hamburger = document.querySelector(".hamburger");
 

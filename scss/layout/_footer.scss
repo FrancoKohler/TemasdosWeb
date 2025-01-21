@@ -16,7 +16,6 @@ footer {
   .footer-grid {
     display: flex;
     flex: 1;
-    gap: 0;
     max-width: 80rem;
     width: 100%;
     margin: auto;
@@ -58,7 +57,6 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-bottom: 0.1rem;
         font-family: var(--font-family-alternates);
         font-weight: 200;
         color: var(--secondary-color);
@@ -83,7 +81,6 @@ footer {
           flex: wrap;
           justify-content: center;
           align-items: center;
-          padding-bottom: 0.1rem;
           font-family: var(--font-family-alternates);
           font-weight: 200;
           color: var(--secondary-color);

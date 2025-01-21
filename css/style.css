@@ -153,7 +153,6 @@ p {
   border: none;
   width: 2rem;
   height: 2rem;
-  padding-right: 2rem;
   box-sizing: content-box;
 }
 .nav-bar .hamburger.show {
@@ -169,11 +168,14 @@ p {
   font-weight: var(--font-weight-regular);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+.nav-bar a .brand-name:hover {
+  color: var(--secondary-color) !important;
+}
 .nav-bar a .brand-name.show {
   color: var(--primary-color);
 }
 
-.menu-collapsed {
+.collapse {
   display: none;
   height: 0;
   opacity: 0;
@@ -189,19 +191,19 @@ p {
   width: 100%;
   transition: height 1s ease, opacity 1s ease;
 }
-.menu-collapsed .nav-links {
+.collapse .nav-links {
   display: flex;
   gap: 1rem;
   flex-direction: column;
   align-items: center;
   width: 60%;
 }
-.menu-collapsed .li-nav {
+.collapse .li-nav {
   display: flex;
   list-style: none;
   width: 100%;
 }
-.menu-collapsed .li-nav a {
+.collapse .li-nav .a-nav {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -212,18 +214,14 @@ p {
   width: 100%;
   text-transform: uppercase;
 }
-.menu-collapsed .li-nav a:hover {
+.collapse .li-nav a:hover {
   font-weight: 600;
 }
 
-.collapsed-menu.show {
+.collapse.show {
   display: flex;
   height: fit-content;
   opacity: 1;
-}
-
-.navprod a .brand-prod {
-  color: var(--primary-color);
 }
 
 footer {
@@ -244,7 +242,6 @@ footer {
 footer .footer-grid {
   display: flex;
   flex: 1;
-  gap: 0;
   max-width: 80rem;
   width: 100%;
   margin: auto;
@@ -289,7 +286,6 @@ footer .footer-grid .inner-footer .inner-siguenos {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.1rem;
   font-family: var(--font-family-alternates);
   font-weight: 200;
   color: var(--secondary-color);
@@ -314,7 +310,6 @@ footer .footer-grid .inner-footer a .inner-contact {
   flex: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 0.1rem;
   font-family: var(--font-family-alternates);
   font-weight: 200;
   color: var(--secondary-color);
@@ -707,7 +702,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   height: 10%;
 }
 .category .sofa-category a .cat-btn {
-  border-radius: 0.2rem;
+  border-radius: 0.5rem !important;
   border: none;
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -767,7 +762,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   height: 10%;
 }
 .category .sofa-category2 a .cat-btn {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
   border: none;
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -827,7 +822,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   height: 10%;
 }
 .category .sofa-category3 a .cat-btn {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
   border: none;
   background-color: var(--secondary-color);
   cursor: pointer;
@@ -1080,13 +1075,6 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   display: flex;
   flex-direction: row;
 }
-.inspiracion .inspo-grid .h-1 {
-  position: absolute;
-  padding-left: 1rem;
-  padding-top: 1rem;
-  font-family: var(--font-family-alternates);
-  color: var(--secondary-color);
-}
 .inspiracion .inspo-grid .imgs-2 {
   display: flex;
 }
@@ -1126,10 +1114,13 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   flex-direction: column;
   padding-left: 1rem;
   padding-top: 1.5rem;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-alternates) !important;
   color: var(--primary-color);
   font-size: var(--font-size-small);
-  font-weight: var(--font-weight-regular);
+  font-weight: 500;
+}
+.inspiracion .inspo-grid .inspo-1 .inspo-1-text h3 {
+  font-weight: 700;
 }
 .inspiracion .inspo-grid .inspo-2 {
   flex: 1.5;
@@ -1173,10 +1164,13 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   flex-direction: column;
   padding-left: 1rem;
   padding-top: 1.5rem;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-alternates);
   color: var(--primary-color);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-regular);
+}
+.inspiracion .inspo-grid .inspo-2 .inspo-2-text h3 {
+  font-weight: 600;
 }
 
 .lower {
@@ -1420,14 +1414,20 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
 .main-producto .section-producto .mid-producto .div-h .h-espacios {
   width: 100%;
   font-family: var(--font-family-primary);
-  font-weight: 400;
   color: var(--primary-color);
+  font-weight: 400;
+  font-size: 2em;
   display: flex;
   gap: 0.5rem;
   margin: auto;
   align-items: center;
   justify-content: center;
   width: 60%;
+}
+.main-producto .section-producto .mid-producto .div-h .h-espacios .span-hero {
+  font-family: var(--font-family-primary);
+  color: var(--primary-color);
+  font-weight: 400;
 }
 .main-producto .section-producto .mid-producto .espacios-div {
   padding-top: 2rem;
@@ -1467,12 +1467,12 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   width: 100%;
   border-bottom: 1px solid var(--stroke-color);
 }
-.main-producto .section-producto .low-producto .div-h h4 {
+.main-producto .section-producto .low-producto .div-h .low-title {
   width: 100%;
   font-family: var(--font-family-primary);
-  font-weight: 400;
-  font-size: var(--font-size-h);
   color: var(--primary-color);
+  font-weight: 400;
+  font-size: 2em;
   display: flex;
   gap: 0.5rem;
   margin: auto;

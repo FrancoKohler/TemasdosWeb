@@ -32,7 +32,7 @@
       height: 10%;
 
       .cat-btn {
-        border-radius: 0.2rem;
+        border-radius: 0.5rem !important;
         border: none;
         background-color: var(--secondary-color);
         cursor: pointer;
@@ -93,7 +93,7 @@
       height: 10%;
 
       .cat-btn {
-        border-radius: 0.5rem;
+        border-radius: 0.5rem !important;
         border: none;
         background-color: var(--secondary-color);
         cursor: pointer;
@@ -154,7 +154,7 @@
       height: 10%;
 
       .cat-btn {
-        border-radius: 0.5rem;
+        border-radius: 0.5rem !important;
         border: none;
         background-color: var(--secondary-color);
         cursor: pointer;

@@ -73,14 +73,20 @@
         .h-espacios {
           width: 100%;
           font-family: var(--font-family-primary);
-          font-weight: 400;
           color: var(--primary-color);
+          font-weight: 400;
+          font-size: 2em;
           display: flex;
           gap: 0.5rem;
           margin: auto;
           align-items: center;
           justify-content: center;
           width: 60%;
+          .span-hero {
+            font-family: var(--font-family-primary);
+            color: var(--primary-color);
+            font-weight: 400;
+          }
         }
       }
 
@@ -122,12 +128,12 @@
         flex-direction: row;
         width: 100%;
         border-bottom: 1px solid var(--stroke-color);
-        h4 {
+        .low-title {
           width: 100%;
           font-family: var(--font-family-primary);
-          font-weight: 400;
-          font-size: var(--font-size-h);
           color: var(--primary-color);
+          font-weight: 400;
+          font-size: 2em;
           display: flex;
           gap: 0.5rem;
           margin: auto;
