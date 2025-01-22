@@ -160,7 +160,7 @@ p {
   box-sizing: content-box;
 }
 .nav-bar .hamburger.show {
-  content: url("/assets/imgs/menubl.svg");
+  content: url("../assets/imgs/menubl.svg");
 }
 .nav-bar a {
   text-decoration: none;
@@ -334,7 +334,7 @@ footer .footer-grid .inner-footer .sub-contact p {
 
 /*PAGES STYLES*/
 main .top-productos {
-  background-image: url("/assets/imgs/GENERAL/ALL.PNG");
+  background-image: url("../assets/imgs/GENERAL/ALL.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -528,7 +528,7 @@ main .productos .contenedor-sofa .producto .contenedor.active .item img {
 }
 
 main .contacto-hero {
-  background-image: url("https://github.com/FrancoKohler/TemasdosWeb/blob/main/assets/imgs/contactobg.png");
+  background-image: url("../assets/imgs/contactobg.png");
   background-size: cover;
   background-position: center;
   height: 10em;
@@ -925,7 +925,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   border-bottom-left-radius: 15px;
 }
 .nuevos-modelos .grid-nuevos .grid-item:first-child:hover {
-  background-image: url("../../assets/imgs/GENERAL/SISAL.jpg");
+  background-image: url("../assets/imgs/GENERAL/SISAL.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -935,7 +935,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   border-bottom-right-radius: 15px;
 }
 .nuevos-modelos .grid-nuevos .grid-item:last-child:hover {
-  background-image: url("../../assets/imgs/GENERAL/MISTRAL.jpg");
+  background-image: url("../assets/imgs/GENERAL/MISTRAL.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -943,7 +943,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
 .nuevos-modelos
   .grid-nuevos
   .grid-item:not(:first-child):not(:last-child):hover {
-  background-image: url("../../assets/imgs/GENERAL/DINO.jpg");
+  background-image: url("../assets/imgs/GENERAL/DINO.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -990,7 +990,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   border-bottom-left-radius: 15px;
 }
 .nuevos-modelos .grid-mas .mas-items:first-child:hover {
-  background-image: url("../../assets/imgs/GENERAL/YUTRA.jpg");
+  background-image: url("../assets/imgs/GENERAL/YUTRA.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1000,13 +1000,13 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   border-bottom-right-radius: 15px;
 }
 .nuevos-modelos .grid-mas .mas-items:last-child:hover {
-  background-image: url("../../assets/imgs/GENERAL/OMEGA.jpg");
+  background-image: url("../assets/imgs/GENERAL/OMEGA.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .nuevos-modelos .grid-mas .mas-items:not(:first-child):not(:last-child):hover {
-  background-image: url("../../assets/imgs/GENERAL/TUNDRA.jpg");
+  background-image: url("../assets/imgs/GENERAL/TUNDRA.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1650,12 +1650,11 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   width: 100%;
 }
 .main-sobre .div-top {
-  background-color: aqua;
   height: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/assets/imgs/GENERAL/SISAL.jpg");
+  background-image: url("../assets/imgs/GENERAL/SISAL.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
