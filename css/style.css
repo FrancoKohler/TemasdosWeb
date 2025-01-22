@@ -23,13 +23,15 @@
 }
 @font-face {
   font-family: "Alternates";
-  src: url("../fonts/Alternates/MontserratAlternates-Regular.ttf") format("opentype");
+  src: url("../fonts/Alternates/MontserratAlternates-Regular.ttf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Alternates";
-  src: url("../fonts/Alternates/MontserratAlternates-Bold.ttf") format("opentype");
+  src: url("../fonts/Alternates/MontserratAlternates-Bold.ttf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -100,13 +102,15 @@ p {
 }
 @font-face {
   font-family: "Alternates";
-  src: url("../fonts/Alternates/MontserratAlternates-Regular.ttf") format("opentype");
+  src: url("../fonts/Alternates/MontserratAlternates-Regular.ttf")
+    format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Alternates";
-  src: url("../fonts/Alternates/MontserratAlternates-Bold.ttf") format("opentype");
+  src: url("../fonts/Alternates/MontserratAlternates-Bold.ttf")
+    format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -225,6 +229,7 @@ p {
 }
 
 footer {
+  background-image: url("../assets/imgs/GENERAL/Backfooter.png");
   position: absolute;
   min-height: 150px;
   min-width: 18rem;
@@ -935,7 +940,9 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   background-position: center;
   background-repeat: no-repeat;
 }
-.nuevos-modelos .grid-nuevos .grid-item:not(:first-child):not(:last-child):hover {
+.nuevos-modelos
+  .grid-nuevos
+  .grid-item:not(:first-child):not(:last-child):hover {
   background-image: url("../../assets/imgs/GENERAL/DINO.jpg");
   background-size: cover;
   background-position: center;
@@ -1441,7 +1448,12 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   flex-direction: column;
   gap: 1rem;
 }
-.main-producto .section-producto .mid-producto .espacios-div .espacios-div-1 .espacios-img {
+.main-producto
+  .section-producto
+  .mid-producto
+  .espacios-div
+  .espacios-div-1
+  .espacios-img {
   width: 100%;
 }
 .main-producto .section-producto .mid-producto .espacios-div .espacios-div-2 {
@@ -1449,7 +1461,12 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   display: flex;
   flex-direction: column;
 }
-.main-producto .section-producto .mid-producto .espacios-div .espacios-div-2 .espacios-img2 {
+.main-producto
+  .section-producto
+  .mid-producto
+  .espacios-div
+  .espacios-div-2
+  .espacios-img2 {
   width: 100%;
 }
 .main-producto .section-producto .low-producto {
@@ -1542,7 +1559,12 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   position: relative;
   transition: 1s;
 }
-.main-producto .section-producto .fichas-tecnicas .botones-div .inner-botones .botones {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .botones-div
+  .inner-botones
+  .botones {
   cursor: pointer;
   border: none;
   width: 100%;
@@ -1552,19 +1574,38 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   font-weight: 400;
   color: var(--secondary-color);
 }
-.main-producto .section-producto .fichas-tecnicas .botones-div .inner-botones img {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .botones-div
+  .inner-botones
+  img {
   cursor: pointer;
   display: none;
   transition: 1s;
 }
-.main-producto .section-producto .fichas-tecnicas .botones-div .inner-botones:hover {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .botones-div
+  .inner-botones:hover {
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
 }
-.main-producto .section-producto .fichas-tecnicas .botones-div .inner-botones:hover .botones {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .botones-div
+  .inner-botones:hover
+  .botones {
   color: var(--primary-color);
 }
-.main-producto .section-producto .fichas-tecnicas .botones-div .inner-botones:hover img {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .botones-div
+  .inner-botones:hover
+  img {
   display: flex;
   width: 24px;
   height: 24px;
@@ -1573,8 +1614,16 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.main-producto .section-producto .fichas-tecnicas .carousel .carousel-control-prev-icon,
-.main-producto .section-producto .fichas-tecnicas .carousel .carousel-control-next-icon {
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .carousel
+  .carousel-control-prev-icon,
+.main-producto
+  .section-producto
+  .fichas-tecnicas
+  .carousel
+  .carousel-control-next-icon {
   z-index: 99999;
   background-color: black;
   padding: 1rem;
