@@ -230,7 +230,6 @@ footer {
   min-width: 18rem;
   width: 100%;
   height: 50vh;
-  background-image: url("/assets/imgs/GENERAL/Backfooter.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -457,7 +456,6 @@ main .productos .contenedor-sofa .producto .contenedor.active .item img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/imgs/GENERAL/FOTOSBG.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -682,7 +680,6 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   height: 100vh;
 }
 .category .sofa-category {
-  background-image: url("https://github.com/FrancoKohler/TemasdosWeb/blob/main/assets/imgs/GENERAL/SOFASCAT.png ");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -742,7 +739,6 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   transform: translateX(70px);
 }
 .category .sofa-category2 {
-  background-image: url("/assets/imgs/GENERAL/BUTACASCAT.png");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -802,7 +798,6 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   transform: translateX(70px);
 }
 .category .sofa-category3 {
-  background-image: url("/assets/imgs/GENERAL/MESITAREMO.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
