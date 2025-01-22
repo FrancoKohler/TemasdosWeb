@@ -225,12 +225,12 @@ p {
 }
 
 footer {
-  position: relative;
+  position: absolute;
   min-height: 150px;
   min-width: 18rem;
   width: 100%;
   height: 50vh;
-  background-image: url(/assets/imgs/GENERAL/Backfooter.png);
+  background-image: url("/assets/imgs/GENERAL/Backfooter.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,7 +525,7 @@ main .productos .contenedor-sofa .producto .contenedor.active .item img {
 }
 
 main .contacto-hero {
-  background-image: url("/assets/imgs/contactobg.png");
+  background-image: url("https://github.com/FrancoKohler/TemasdosWeb/blob/main/assets/imgs/contactobg.png");
   background-size: cover;
   background-position: center;
   height: 10em;
@@ -682,7 +682,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   height: 100vh;
 }
 .category .sofa-category {
-  background-image: url(/assets/imgs/GENERAL/SOFASCAT.png);
+  background-image: url("https://github.com/FrancoKohler/TemasdosWeb/blob/main/assets/imgs/GENERAL/SOFASCAT.png ");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -742,7 +742,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   transform: translateX(70px);
 }
 .category .sofa-category2 {
-  background-image: url(/assets/imgs/GENERAL/BUTACASCAT.png);
+  background-image: url("/assets/imgs/GENERAL/BUTACASCAT.png");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -802,7 +802,7 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   transform: translateX(70px);
 }
 .category .sofa-category3 {
-  background-image: url(/assets/imgs/GENERAL/MESITAREMO.jpg);
+  background-image: url("/assets/imgs/GENERAL/MESITAREMO.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1584,6 +1584,104 @@ main .section-contacto .both-contacto .inner-contacto .top-der .info p {
   background-color: black;
   padding: 1rem;
   border-radius: 50%;
+}
+.main-producto .section-producto .div-modelo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.main-producto .section-producto .div-modelo .nombre-sofa {
+  color: var(--stroke-color);
+  font-family: var(--font-family-alternates);
+  text-decoration: none;
+}
+.main-producto .section-producto .div-modelo .nombre-sofa:hover {
+  color: var(--primary-color);
+}
+
+.main-sobre {
+  height: 100vh;
+  width: 100%;
+}
+.main-sobre .div-top {
+  background-color: aqua;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/imgs/GENERAL/SISAL.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-sobre .div-top .h-sobre {
+  font-family: var(--font-family-primary);
+  color: var(--secondary-color);
+  font-size: 2em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.main-sobre .section-sobre {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-sobre .section-sobre .div-sobre {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-sobre .section-sobre .div-sobre .h-creadores {
+  font-family: var(--font-family-secondary);
+  color: var(--primary-color);
+}
+.main-sobre .section-sobre .div-sobre .p-creadores {
+  padding-top: 2rem;
+  color: var(--primary-color);
+  font-family: var(--font-family-alternates);
+}
+.main-sobre .section-sobre .div-sobre .p-creadores .span-creadores {
+  font-weight: 600;
+}
+.main-sobre .section-sobre .img-div {
+  padding-right: 2rem;
+  width: 30%;
+}
+.main-sobre .section-sobre .img-div img {
+  width: 100%;
+}
+.main-sobre .section-sobre .div-asociadas {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  padding-top: 4rem;
+}
+.main-sobre .section-sobre .div-asociadas h3 {
+  color: var(--primary-color);
+  font-family: var(--font-family-secondary);
+  font-weight: 400;
+  font-size: var(--font-size-h);
+}
+.main-sobre .section-sobre .div-asociadas div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 60%;
+}
+.main-sobre .section-sobre .div-asociadas div img {
+  width: 150px;
+  height: 70px;
 }
 
 /*COMPONENTS*/

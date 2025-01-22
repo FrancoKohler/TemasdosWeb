@@ -277,22 +277,24 @@ document.addEventListener("DOMContentLoaded", function () {
       espaciosDiv1.appendChild(imgEspacios2);
       espaciosDiv2.appendChild(imgEspacios3);
     }
-
-    // Llamar a la función para poblar el HTML con los datos del sofá
     populateHtml(sofa);
   } else {
     console.log("Sofá no encontrado");
   }
 });
-/*----------CAROUSEL TAILWIND---*/
-var swiper = new Swiper(".default-carousel", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+/*----------DIV MODELOS---*/
+
+document.addEventListener("DOMContentLoaded", function modelosNombre() {
+  const divModelos = document.querySelector("#divModel");
+  sofas.forEach((sofa, index) => {
+    const nombre = document.createElement("a");
+    nombre.textContent = sofa.nombre;
+    nombre.classList.add("nombre-sofa");
+    nombre.href = "../pages/product.html";
+    if (index === 0) {
+      nombre.style.color = "#393434";
+      nombre.classList.add("first-sofa");
+    }
+    divModelos.appendChild(nombre);
+  });
 });

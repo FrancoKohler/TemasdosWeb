@@ -257,5 +257,20 @@
         }
       }
     }
+    .div-modelo {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 1rem;
+      padding-bottom: 2rem;
+      .nombre-sofa {
+        color: var(--stroke-color);
+        font-family: var(--font-family-alternates);
+        text-decoration: none;
+      }
+      .nombre-sofa:hover {
+        color: var(--primary-color);
+      }
+    }
   }
 }

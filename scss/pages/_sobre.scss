@@ -1,0 +1,83 @@
+.main-sobre {
+  height: 100vh;
+  width: 100%;
+  .div-top {
+    background-color: aqua;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/assets/imgs/GENERAL/SISAL.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    .h-sobre {
+      font-family: var(--font-family-primary);
+      color: var(--secondary-color);
+      font-size: 2em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .section-sobre {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .div-sobre {
+      width: 50%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .h-creadores {
+        font-family: var(--font-family-secondary);
+        color: var(--primary-color);
+      }
+      .p-creadores {
+        padding-top: 2rem;
+        color: var(--primary-color);
+        font-family: var(--font-family-alternates);
+        .span-creadores {
+          font-weight: 600;
+        }
+      }
+    }
+    .img-div {
+      padding-right: 2rem;
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+    .div-asociadas {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+      padding-top: 4rem;
+      h3 {
+        color: var(--primary-color);
+        font-family: var(--font-family-secondary);
+        font-weight: 400;
+        font-size: var(--font-size-h);
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 60%;
+        img {
+          width: 150px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
